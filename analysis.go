@@ -3,9 +3,10 @@ package main
 import (
 	"bufio"
 	"os"
+	"strings"
 )
 
-func GetWords(path string) (wordsMap map[string] int , err error){
+func GetWordsMap(path string) (wordsMap map[string] int , err error){
 
 	wordsMap = make(map[string]int)
 	file, err := os.Open(path)
@@ -24,7 +25,9 @@ func GetWords(path string) (wordsMap map[string] int , err error){
 			break
 		}
 
-		wordsMap[string(line)] = 0
+		word :=  strings.Split(string(line), "\t")[0]
+		word = strings.Trim(word, " ")
+		wordsMap[word] = 0
 	}
 	return
 }
