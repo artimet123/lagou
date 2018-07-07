@@ -6,7 +6,7 @@ import (
 )
 
 // 用于将map排序为slice
-// github.com/gizak/termui的表格组件需要 [][]string
+// github.com/gizak/termui 的表格组件需要 [][]string类型的数据
 
 type WordCountList [][]string
 func (p WordCountList) Len() int { return len(p) }

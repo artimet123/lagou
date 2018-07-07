@@ -73,7 +73,7 @@ func analysisKd(kd string)  {
 
 func displayRank(ranks utils.WordCountList)  {
 	header := [][]string{
-		[]string{"关键词", "出现频率"},
+		[]string{"关键词", "出现频次"},
 	}
 	ranks = ([][]string)(ranks)
 	var sum = len(ranks)
