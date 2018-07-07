@@ -7,7 +7,7 @@ import (
 
 func GetClient() *http.Client{
 	client := &http.Client{
-		Jar: CookieJar,
+		//Jar: CookieJar,
 	}
 	return client
 }
