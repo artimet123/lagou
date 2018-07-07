@@ -34,3 +34,9 @@ go run main.go
 
 - python关键词词频排序
 ![python关键词词频排序](http://www.shawpo.me/media/posts/lagou/lagoupython.png)
+
+### Todos
+
+- 支持并发，提高爬取速度
+- 添加Web页面，显示词云
+- 支持其他招聘网站，对爬取结果进行整合后分析
